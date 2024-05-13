@@ -19,6 +19,13 @@ A = np.array([
     [0.7, 0.8, 0.8, 1.0]
 ])
 
+# Definir a matriz A como um array NumPy
+A = np.array([
+    [1.0, 0.8, 0.8, 0.7],
+    [0.8, 1.0, 0.7, 0.8],
+    [0.8, 0.7, 1.0, 0.8],
+    [0.7, 0.8, 0.8, 1.0]
+])
 # Calcular a exponencial matricial de A usando expm do SciPy
 expA = expm(A)
 

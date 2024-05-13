@@ -9,12 +9,10 @@
 siteDownload="https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/despesas"
 
 #Variáveis indicando o mês e o ano que irá buscar
-mes=$1
-ano=$2
-
-# Variáveis que indicam os dias do mês da busca
-inicioPeriodo=1
-fimPeriodo=5
+diaIni=$1
+diaFim=$2
+mes=$3
+ano=$4
 
 # Diretórios que serão utilizados para baixar os dados e processá-los
 dataDir="./dados"
@@ -27,7 +25,7 @@ mkdir $dataDir
 prim_exec=true
 
 # Executa o for para cada dia (inicio e fim) do período
-for dia in $(seq -f "%02g" $inicioPeriodo $fimPeriodo); do
+for dia in $(seq -f "%02g" $diaIni $diaFim); do
   zipFile=$ano$mes$dia'_Despesas.zip'
 
   # O comando wget vai baixar o arquivo zip com os dados do site 
