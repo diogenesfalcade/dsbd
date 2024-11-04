@@ -1,0 +1,1 @@
+### Everything here is part of the themes I explored during the Data Science and Big Data course. Some of these themes were taken to other projects, as well as other applications. Using this repository to store these files.
